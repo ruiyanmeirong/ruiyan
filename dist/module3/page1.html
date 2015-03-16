@@ -1,0 +1,291 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .search-body {border: 1px solid #e6e6e6;height:80px;padding:20px;}
+        .search-body select {z-index: 100;}
+        .option-title {line-height: 2.5em;}
+        .search-option {margin-right: 30px;}
+        .inner-search {width: 200px;}
+        .inner-search-action {display: inline-block;border:1px solid #cccccc;height: 37px;padding: 0 10px;border-left: none;}
+        .inner-search-action img {width:22px;margin-top:6px;}
+    </style>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div id="header">
+    <div id="logo">
+        <img src="../img/common_logo.jpg" alt="" />
+    </div>
+    <div class="block-right fright">
+        <div id="user-center">
+            <ul>
+                <li>
+                    admin 欢迎您！
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fleft message-icon"><img src="../img/message_icon.jpg" alt="" /></span>
+                        <span class="fleft">消息提醒</span>
+                        <span class="fleft message-point"><img src="../img/message_point.jpg" alt="" /></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="user-logout">注销</span>
+                </li>
+                <li style="border-right:none;padding-right:0;">
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user-search">
+            <span class="search-by fleft">商 品</span>
+            <img class="input-search-icon fleft" src="../img/input_search_icon.jpg" alt="" />
+            <span class="fleft"><input class="input-search-box" type="text" placeholder="名称/代码"/></span>
+            <span class="search-action fright">搜 索</span>
+        </div>
+    </div>
+</div>
+
+<div id="header-menu" class="mt20">
+    <ul>
+        <li>
+            <a href="javascript:;" class="current-menu">前台收银</a>
+        </li>
+        <li>
+            <a href="javascript:;">预约管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">营运统计</a>
+        </li>
+        <li>
+            <a href="javascript:;">库存管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">权限管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统管理</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <div class="search-body">
+        <div class="search-option fleft">
+            <span class="option-title fleft">所属部门：</span>
+            <select data-am-selected="{btnSize: 'sm'}" style="wudth:200px;height:36px;">
+                <option value="option1">选项一</option>
+                <option value="option2">选项二</option>
+                <option value="option3">选项三</option>
+            </select>
+        </div>
+        <div class="search-option fleft">
+            <span class="option-title fleft">关键字：</span>
+                    <span class="am-input-group am-input-group-sm inner-search fleft">
+                        <input type="text" class="am-form-field" />
+                    </span>
+                    <span class="inner-search-action">
+                        <img src="../img/search_icon.jpg" alt="" />
+                    </span>
+        </div>
+    </div>
+
+    <div class="main-table mt20">
+        <table class="am-table am-table-striped am-table-hover table-main">
+            <thead>
+            <tr>
+                <th>序号</th><th>姓名</th><th>手机号</th><th>级别</th><th>所属部门</th><th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>张晶晶</td>
+                <td>13585546884</td>
+                <td>白金卡</td>
+                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">购买商品</a>
+                        <a href="javacript:;" class="table-option">离店登记</a>
+                        <a href="javacript:;" class="table-option">购物车</a>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="paging fright">
+            <ul class="am-pagination fleft" style="text-align: center;">
+                <li class="paging-nav"><a href="#">&lt; 上一页</a></li>
+                <li class="am-active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="paging-nav"><a href="#">下一页 &gt;</a></li>
+            </ul>
+            <span style="margin-top: 2px;">共 100 页. 到第 <input type="text" value="2" /> 页 </span>
+            <span class="paging-sure">确定</span>
+        </div>
+    </div>
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="../js/amazeui.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
