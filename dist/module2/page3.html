@@ -19,6 +19,12 @@
         .inner-search-action {display: inline-block;border:1px solid #cccccc;height: 37px;padding: 0 10px;border-left: none;}
         .inner-search-action img {width:22px;margin-top:6px;}
         .table-set {float:right;background-color: #ff9f41;color:#ffffff;cursor: pointer;padding:5px 10px;}
+        .modal-tab1 {width:280px;margin:0 auto;}
+        .single-line-input {border: none !important;border-bottom:1px solid #cccccc !important;width:100px !important;background-color:#f8f8f8 !important;margin-left:5px !important;height:25px;}
+        .medal-checkbox {overflow: hidden;}
+        .medal-checkbox li {float:left;width:20%;display: inline-block;margin:5px 0;}
+        .medal-checkbox li input {margin-right:5px;}
+        .custom-del {cursor: pointer;}
     </style>
 </head>
 <body>
@@ -134,7 +140,7 @@
                 <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option2">分配工种</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 600, height: 380}">单工种分配</a>
                     </div>
                 </td>
             </tr>
@@ -146,7 +152,7 @@
                 <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option2">分配工种</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 800, height: 600}">单工种分配</a>
                     </div>
                 </td>
             </tr>
@@ -158,9 +164,9 @@
                 <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option2">修改工种</a>
-                        <a href="javacript:;" class="table-option2">修改提成</a>
-                        <a href="javacript:;" class="table-option2">自定义业绩</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 320}">单工种提成设置</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-4', closeViaDimmer: 0, width: 800, height: 300}">单工种分配2</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-5', closeViaDimmer: 0, width: 600, height: 400}">自定义业绩</a>
                     </div>
                 </td>
             </tr>
@@ -216,6 +222,276 @@
             </ul>
             <span style="margin-top: 2px;">共 100 页. 到第 <input type="text" value="2" /> 页 </span>
             <span class="paging-sure">确定</span>
+        </div>
+    </div>
+</div>
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">多工种提成设置
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner">
+                <div class="form-group" style="width:400px;margin:0 auto 20px; auto;">
+                    <div class="search-option fleft">
+                        <span class="option-title fleft">组合方式：</span>
+                        <select class="form-field-inline-select">
+                            <option value="option1">选项一</option>
+                            <option value="option2">选项二</option>
+                            <option value="option3">选项三</option>
+                        </select>
+                    </div>
+                    <div class="search-option fleft">
+                        <span class="option-title fleft">提成方案：</span>
+                        <select class="form-field-inline-select">
+                            <option value="option1">选项一</option>
+                            <option value="option2">选项二</option>
+                            <option value="option3">选项三</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-inner-center">
+                    <div class="home-type modal-tab1">
+                        <ul>
+                            <li class="current-type">高级美发师</li>
+                            <li>洗头工</li>
+                            <li>按摩师</li>
+                        </ul>
+                    </div>
+                    <div class="modal-group mt20">
+                        <span>默认提成：</span>
+                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group1" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <div class="modal-group">
+                        <span>指定提成：</span>
+                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group1" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:50px auto 20px auto;">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-2">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">单工种分配
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-bd">
+            <div class="form-group">
+                <ul class="medal-checkbox">
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                </ul>
+            </div>
+            <div clas="form-group" style="width:300px;margin:0 auto;overflow: hidden;">
+                <div class="search-option fleft">
+                    <span class="base-option-title fleft">组合名称</span>
+                    <span class="form-field-inline" style="margin:0 5px;"><input class="base-input" type="text"/></span>
+                    <span style="background-color: #ff9f41;color:#fff;padding:5px 10px;">添加</span>
+                </div>
+            </div>
+            <div class="main-table mt20" style="overflow: hidden;clear:both;">
+                <table class="am-table am-table-striped am-table-hover table-main">
+                    <thead>
+                    <tr>
+                        <th>组合名称</th><th>组合工种</th><th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>组合一</td>
+                        <td>组合工种组合工种组合工种组合工种组合工种组合工种</td>
+                        <td>
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="javacript:;" class="table-option2">分配工种</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>组合一</td>
+                        <td>组合工种组合工种组合工种组合工种组合工种组合工种</td>
+                        <td>
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="javacript:;" class="table-option2">分配工种</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>组合一</td>
+                        <td>组合工种组合工种组合工种组合工种组合工种组合工种</td>
+                        <td>
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="javacript:;" class="table-option2">分配工种</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>组合一</td>
+                        <td>组合工种组合工种组合工种组合工种组合工种组合工种</td>
+                        <td>
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="javacript:;" class="table-option2">分配工种</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>组合一</td>
+                        <td>组合工种组合工种组合工种组合工种组合工种组合工种</td>
+                        <td>
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="javacript:;" class="table-option2">分配工种</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>组合一</td>
+                        <td>组合工种组合工种组合工种组合工种组合工种组合工种</td>
+                        <td>
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="javacript:;" class="table-option2">分配工种</a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:20px auto;">确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-3">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">单工种提成设置
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner">
+                <div class="form-group" style="width:400px;margin:0 auto 20px; auto;">
+                    <div class="search-option fleft">
+                        <span class="option-title fleft">选择工种：</span>
+                        <select class="form-field-inline-select">
+                            <option value="option1">选项一</option>
+                            <option value="option2">选项二</option>
+                            <option value="option3">选项三</option>
+                        </select>
+                    </div>
+                    <div class="search-option fleft">
+                        <span class="option-title fleft">提成方案：</span>
+                        <select class="form-field-inline-select">
+                            <option value="option1">选项一</option>
+                            <option value="option2">选项二</option>
+                            <option value="option3">选项三</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-inner-center">
+                    <div class="modal-group">
+                        <span>默认提成：</span>
+                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group1" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <div class="modal-group">
+                        <span>指定提成：</span>
+                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group1" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:50px auto 20px auto;">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-4">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">单工种分配
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-bd">
+            <div class="form-group">
+                <ul class="medal-checkbox">
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                    <li><input type="checkbox"/>高级美容师</li>
+                </ul>
+            </div>
+            <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:20px auto;">确定</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-5">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">自定义业绩
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner">
+                <h2 style="text-align: left;font-size: 14px;margin-left: 30px;">服务名称：精油按摩</h2>
+                <h2 style="text-align: left;font-size: 14px;margin-left: 30px;">独立完成该服务的工种<span style="margin-left:20px;cursor:pointer; background-color: #ff9f41;color:#fff;padding:5px 10px;">添加</span></h2>
+                <div class="form-group mt20">
+                    <ul class="medal-checkbox">
+                        <li><input type="checkbox"/>高级美容师</li>
+                        <li><input type="checkbox"/>高级美容师</li>
+                        <li><input type="checkbox"/>高级美容师</li>
+                    </ul>
+                </div>
+                <div class="modal-inner-center">
+                    <div class="home-type2 modal-tab1">
+                        <ul>
+                            <li class="current-type2">组合一</li>
+                            <li>组合二</li>
+                            <li>组合三</li>
+                        </ul>
+                    </div>
+                    <div class="modal-group mt20">
+                        <span>默认提成：</span>
+                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span class="custom-del">删除</span>
+                    </div>
+                    <div class="modal-group">
+                        <span>指定提成：</span>
+                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span class="custom-del">删除</span>
+                    </div>
+                    <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:20px auto;">确定</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
