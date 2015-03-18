@@ -15,17 +15,6 @@
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
-        #home-type {margin-bottom: 20px;position:relative;}
-        #home-type .line {position:absolute;bottom:0;width:100%;height:2px;background-color:#e6e6e6;display: block;}
-        #home-type ul {padding:0;overflow: hidden;margin:0;}
-        #home-type li {float:left;margin-right: 30px;cursor: pointer;}
-        #home-type li.current-type {color:#ff5a3a;border-bottom: 2px solid #ff5a3a;padding-bottom: 15px;}
-        #home-tab {border:1px solid #e6e6e6;background-color: #f7f7f7;overflow: hidden;clear:both;}
-        #home-tab ul {float:left;padding:0;margin:0;}
-        #home-tab li {float:left;display:inline-block;padding:8px 15px;cursor: pointer;}
-        #home-tab li .tab-img {width:15px;height:15px;}
-        #home-tab li.current-tab {background-color: #ffffff;}
-        #home-tab li span {float:left;display:inline-block;margin-right:5px;}
         .product-list {overflow: hidden;margin-top: 20px;}
         .product-list ul {padding:0;}
         .product-list li {width:236px;float:left; border: 1px solid #e6e6e6;overflow: hidden;margin:0 10px 30px 10px; }
@@ -295,16 +284,6 @@
 <script src="../js/main.js"></script>
 <script>
     $(function(){
-        $('#home-type li').on('click', function(){
-            $('#home-type li').removeClass('current-type');
-            $(this).addClass('current-type');
-        });
-
-        $('#home-tab li').on('click', function(){
-            $('#home-tab li').removeClass('current-tab');
-            $(this).addClass('current-tab');
-        });
-
         $('.see-more').on('click', function(){
             var text = $(this).text();
             if(text == '收起') {
@@ -315,7 +294,7 @@
                 $(this).parents('.search-body-inner').find('.auto-hide').fadeIn('500');
             }
         })
-    })
+    });
 </script>
 </body>
 </html>

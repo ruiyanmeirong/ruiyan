@@ -18,6 +18,7 @@
         .inner-search {width: 200px;}
         .inner-search-action {display: inline-block;border:1px solid #cccccc;height: 37px;padding: 0 10px;border-left: none;}
         .inner-search-action img {width:22px;margin-top:6px;}
+        .table-set {float:right;background-color: #ff9f41;color:#ffffff;cursor: pointer;padding:5px 10px;}
     </style>
 </head>
 <body>
@@ -59,7 +60,7 @@
 <div id="header-menu" class="mt20">
     <ul>
         <li>
-            <a href="javascript:;" class="current-menu">前台收银</a>
+            <a href="javascript:;">前台收银</a>
         </li>
         <li>
             <a href="javascript:;">预约管理</a>
@@ -68,7 +69,7 @@
             <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
         <li>
-            <a href="javascript:;">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+            <a href="javascript:;" class="current-menu">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
         <li>
             <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
@@ -94,7 +95,7 @@
 <div id="content">
     <div class="search-body">
         <div class="search-option fleft">
-            <span class="option-title fleft">所属部门：</span>
+            <span class="option-title fleft">提成类型：</span>
             <select data-am-selected="{btnSize: 'sm'}" class="fix-ie8-select">
                 <option value="option1">选项一</option>
                 <option value="option2">选项二</option>
@@ -102,9 +103,13 @@
             </select>
         </div>
         <div class="search-option fleft">
+            <span class="option-title fleft">提成方式：</span>
+            <span class="form-field-inline"><input class="base-input" type="text" style="height:37px;"/></span>
+        </div>
+        <div class="search-option fleft">
             <span class="option-title fleft">关键字：</span>
             <span class="am-input-group am-input-group-sm inner-search fleft">
-                <input type="text" class="am-form-field" />
+                <input type="text" class="am-form-field" placeholder="顾客姓名/手机" />
             </span>
             <span class="inner-search-action">
                 <img src="../img/search_icon.jpg" alt="" />
@@ -112,151 +117,88 @@
         </div>
     </div>
 
-    <div class="main-table mt20">
+    <div class="table-set mt20">顾客提问设置</div>
+    <div class="main-table" style="overflow: hidden;clear:both;">
         <table class="am-table am-table-striped am-table-hover table-main">
             <thead>
             <tr>
-                <th>序号</th><th>姓名</th><th>手机号</th><th>级别</th><th>所属部门</th><th>操作</th>
+                <th>序号</th><th>商品类型</th><th>商品编号</th><th>商品名称</th><th>完成方式</th><th>操作</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>1</td>
-                <td>张晶晶</td>
+                <td>服务</td>
                 <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>理疗按摩</td>
+                <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
+                        <a href="javacript:;" class="table-option2">分配工种</a>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>张晶晶</td>
+                <td>服务</td>
                 <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>理疗按摩</td>
+                <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
+                        <a href="javacript:;" class="table-option2">分配工种</a>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>张晶晶</td>
+                <td>服务</td>
                 <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>理疗按摩</td>
+                <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
+                        <a href="javacript:;" class="table-option2">修改工种</a>
+                        <a href="javacript:;" class="table-option2">修改提成</a>
+                        <a href="javacript:;" class="table-option2">自定义业绩</a>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>张晶晶</td>
+                <td>服务</td>
                 <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>理疗按摩</td>
+                <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
+                        <a href="javacript:;" class="table-option2">设置提成</a>
+                        <a href="javacript:;" class="table-option2">修改工种</a>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>张晶晶</td>
+                <td>服务</td>
                 <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>理疗按摩</td>
+                <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
+                        <a href="javacript:;" class="table-option2">修改工种</a>
+                        <a href="javacript:;" class="table-option2">修改提成</a>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>张晶晶</td>
+                <td>服务</td>
                 <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
+                <td>理疗按摩</td>
+                <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>张晶晶</td>
-                <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
-                <td>
-                    <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>张晶晶</td>
-                <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
-                <td>
-                    <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>张晶晶</td>
-                <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
-                <td>
-                    <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>张晶晶</td>
-                <td>13585546884</td>
-                <td>白金卡</td>
-                <td>上海门店诉讼法上海门店诉讼法</td>
-                <td>
-                    <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option">购买商品</a>
-                        <a href="javacript:;" class="table-option">离店登记</a>
-                        <a href="javacript:;" class="table-option">购物车</a>
+                        <a href="javacript:;" class="table-option2">分配工种</a>
                     </div>
                 </td>
             </tr>
