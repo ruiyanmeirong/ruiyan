@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .detail-body {overflow: hidden;margin-bottom: 30px;}
+        .detail-title-bar {overflow: hidden;position: relative;padding-bottom: 20px;}
+        .detail-title {font-size:14px;font-weight: bold;margin-top: 10px;}
+        .shopping-cart {position:absolute;right:0;top:0;}
+        .shopping-cart .shopping-do {width:150px;position:relative;top:8px;cursor: pointer;}
+        .shopping-cart .shopping-do img {width:150px;}
+        .shopping-count {position: absolute;left:25px;top:0;width:20px;height:20px;border-radius:10px;text-align:center;background-color: #ff5a3a;color:#ffffff;display: block;}
+        .inner-search {width: 200px;}
+        .inner-search-action {display: inline-block;border:1px solid #cccccc;height: 37px;padding: 0 10px;border-left: none;}
+        .inner-search-action img {width:22px;margin-top:6px;}
+        .div-table {clear:both;font-size:13px;overflow: hidden;border-top:none;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+        .table-title-bar {overflow: hidden;background-color: #ffede8;border-top:2px solid #ff5a3a;padding: 5px 0;}
+        .goods-img {float:left;width:300px;height:300px;overflow: hidden;border:1px solid #e6e6e6;margin-right:30px;}
+        .goods-img img {width:300px;height:300px;}
+        .count-option {position:relative;float:left;border:1px solid #e6e6e6;height:52px;overflow: hidden;}
+        .table-input2 {width:50px;height:25px;line-height:25px;text-align: center;}
+        .table-span-up {display:inline-block;cursor: pointer;background-color: #eeeeee;width:25px;height:25px;text-align:center;position:absolute;top:0;right:0;}
+        .table-span-down {display:inline-block;cursor: pointer;background-color: #eeeeee;width:25px;height:25px;text-align:center;position:absolute;bottom:0;right:0;}
+    </style>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div id="header">
+    <div id="logo">
+        <img src="../img/common_logo.jpg" alt="" />
+    </div>
+    <div class="block-right fright">
+        <div id="user-center">
+            <ul>
+                <li>
+                    admin 欢迎您！
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fleft message-icon"><img src="../img/message_icon.jpg" alt="" /></span>
+                        <span class="fleft">消息提醒</span>
+                        <span class="fleft message-point"><img src="../img/message_point.jpg" alt="" /></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="user-logout">注销</span>
+                </li>
+                <li style="border-right:none;padding-right:0;">
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user-search">
+            <span class="search-by fleft">商 品</span>
+            <img class="input-search-icon fleft" src="../img/input_search_icon.jpg" alt="" />
+            <span class="fleft"><input class="input-search-box" type="text" placeholder="名称/代码"/></span>
+            <span class="search-action fright">搜 索</span>
+        </div>
+    </div>
+</div>
+
+<div id="header-menu" class="mt20">
+    <ul>
+        <li>
+            <a href="javascript:;" class="current-menu">前台收银</a>
+        </li>
+        <li>
+            <a href="javascript:;">预约管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">营运统计</a>
+        </li>
+        <li>
+            <a href="javascript:;">库存管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">权限管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统管理</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <div class="detail-body">
+        <div class="detail-title-bar">
+            <h1 class="detail-title">库存管理 &gt; 产品 &gt; MK套装</h1>
+            <div class="shopping-cart">
+                <span class="shopping-do"><img src="../img/shopping.jpg" /></span>
+                <span class="shopping-count">2</span>
+            </div>
+        </div>
+
+        <div class="goods-body">
+            <span class="goods-img"><img src="../img/goods.jpg"></span>
+            <div class="goods-name" style="float:left;">
+                <p>产品名称：<span style="font-weight:bold;font-size:20px;">MK套装</span></p>
+                <div style="width:650px;margin: 20px 0;overflow: hidden;">
+                    <p>
+                        <span style="float:left;display: block;">简介：</span>
+                        <span style="float:right;width:590px;">
+                            商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介
+                            商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介
+                        </span>
+                    </p>
+                </div>
+                <p style="clear:both;margin-bottom: 10px;">商品代码：<span style="font-weight:bold;font-size:18px;">J8787878</span></p>
+                <p>价格：<span style="font-weight:bold;font-size:18px;color:#ff5a3a;">¥2299.00</span></p>
+                <div class="mt20">
+                    <span style="float:left;line-height: 50px;">数量：</span>
+                    <div class="count-option">
+                        <input value="1" class="table-input2" style="border: none;height:50px;line-height: 50px;margin-right:25px;">
+                        <span class="table-span-up"> + </span>
+                        <span class="table-span-down"> - </span>
+                    </div>
+                    <a href="javascript:;" class="am-btn am-btn-block am-btn-danger" style="width:150px;float:left;margin:5px 30px;">加入购物车</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-table">
+        <div class="table-title-bar" style="padding: 10px 0;">
+            <span class="table-title" style="margin-left: 20px;">产品负责人员查询</span>
+        </div>
+        <div class="search-body mt20" style="border: none;padding:10px 30px;;height:50px;">
+            <div class="search-option fleft">
+                <span class="option-title fleft">选择人员类型：</span>
+                <select data-am-selected="{btnSize: 'sm'}" class="fix-ie8-select">
+                    <option value="option1">选项一</option>
+                    <option value="option2">选项二</option>
+                    <option value="option3">选项三</option>
+                </select>
+            </div>
+            <div class="search-option fleft">
+                <span class="option-title fleft">关键字：</span>
+            <span class="am-input-group am-input-group-sm inner-search fleft">
+                <input type="text" class="am-form-field" placeholder="员工姓名/工号" />
+            </span>
+            <span class="inner-search-action" style="width:50px;cursor: pointer;padding-top: 7px;">
+                添加
+            </span>
+            </div>
+        </div>
+        <div class="main-table" style="border-top:none;margin: 20px;">
+            <table class="am-table am-table-striped am-table-hover table-main">
+                <thead>
+                <tr style="background-color: #f4f3f8;">
+                    <th>序号</th><th>工号</th><th>姓名</th><th>职位</th><th>人员类型</th><th>指定</th><th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>MO33</td>
+                    <td>李晶晶</td>
+                    <td>美容师</td>
+                    <td>销售人</td>
+                    <td><input type="checkbox"/></td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="../js/amazeui.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

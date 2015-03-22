@@ -1,0 +1,334 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .table-input {width:80px;height:25px;line-height:25px;}
+        .table-input2 {width:50px;height:25px;line-height:25px;text-align: center;}
+        .table-span {display:inline-block;cursor: pointer;background-color: #eeeeee;width:30px;height:23px;}
+        .goods-body {margin:0 auto;overflow: hidden;width:80%;}
+        .table-img {width:50px;height:50px;border:1px solid #eeeeee;display: block;background-color: #ffffff;float:left;overflow: hidden;}
+        .table-img img {width:50px;height:50px;}
+        .goods-name {margin:8px;text-align: left;float:left;}
+        .submit-buy {background-color: #fff1ec;overflow: hidden;}
+        .submit-buy a {width:100px;float:right;}
+    </style>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div id="header">
+    <div id="logo">
+        <img src="../img/common_logo.jpg" alt="" />
+    </div>
+    <div class="block-right fright">
+        <div id="user-center">
+            <ul>
+                <li>
+                    admin 欢迎您！
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fleft message-icon"><img src="../img/message_icon.jpg" alt="" /></span>
+                        <span class="fleft">消息提醒</span>
+                        <span class="fleft message-point"><img src="../img/message_point.jpg" alt="" /></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="user-logout">注销</span>
+                </li>
+                <li style="border-right:none;padding-right:0;">
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user-search">
+            <span class="search-by fleft">商 品</span>
+            <img class="input-search-icon fleft" src="../img/input_search_icon.jpg" alt="" />
+            <span class="fleft"><input class="input-search-box" type="text" placeholder="名称/代码"/></span>
+            <span class="search-action fright">搜 索</span>
+        </div>
+    </div>
+</div>
+
+<div id="header-menu" class="mt20">
+    <ul>
+        <li>
+            <a href="javascript:;" class="current-menu">前台收银</a>
+        </li>
+        <li>
+            <a href="javascript:;">预约管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">营运统计</a>
+        </li>
+        <li>
+            <a href="javascript:;">库存管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">权限管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统管理</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <h2>张美美的购物车</h2>
+    <div class="main-table mt20">
+        <table class="am-table am-table-striped am-table-hover table-main">
+            <thead>
+            <tr>
+                <th><input type="checkbox"/> 全选</th><th>商品</th><th>价格（元）</th><th>数量</th><th>结算价（元）</th><th>商品状态</th><th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>
+                    <div class="goods-body">
+                        <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                        <div class="goods-name">
+                            <p>商品名称：护发素</p>
+                            <p>商品编号：6454521</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1200 / 升</td>
+                <td><span class="table-span"> - </span><input value="1" class="table-input2"/><span class="table-span"> + </span></td>
+                <td><input value="1200" class="table-input"/></td>
+                <td><input type="checkbox"/> 已使用</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option">删除</a>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="submit-buy mt20">
+            <a href="javascript:;" class="am-btn am-btn-block am-btn-danger">去结算</a>
+        </div>
+    </div>
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="../js/amazeui.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

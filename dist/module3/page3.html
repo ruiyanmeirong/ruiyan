@@ -1,0 +1,254 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .div-table {font-size:13px;overflow: hidden;border-top:none;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+        .table-title-bar {overflow: hidden;background-color: #ffede8;border-top:2px solid #ff5a3a;padding: 5px 0;}
+        .table-title {width:33%;text-align: center;display: inline-block;}
+        .table-body-item {overflow: hidden;margin-bottom: 30px;}
+        .table-body {border-top:1px solid #e6e6e6;}
+        .goods-body {margin:0 auto;overflow: hidden;width:80%;}
+        .goods-item {padding: 10px 0;float:left;width:33%;text-align: center;}
+        .table-img {width:50px;height:50px;border:1px solid #eeeeee;display: block;background-color: #ffffff;float:left;overflow: hidden;}
+        .table-img img {width:50px;height:50px;}
+        .goods-name {margin:8px;text-align: left;float:left;}
+        .table-img img {width:50px;height:50px;}
+        .submit-buy {background-color: #fff1ec;overflow: hidden;}
+        .submit-buy a {width:100px;float:right;}
+        .pay-way {clear:both;border-top:1px solid #e6e6e6;padding:10px 20px;overflow: hidden;}
+        .pay-way-span {float:left;margin-right: 20px;}
+        .pay-way-left {float:left;}
+        .pay-way-right {float:right;}
+        .pay-way-title {overflow: hidden;background-color: #ececec;color:#666666;}
+        .pay-way-title-span {float:left;margin: 10px 20px;}
+        .pay-way-title-close {float:right; cursor: pointer;margin:10px 20px;}
+        .more-pay-way-body {overflow: hidden;padding: 20px;background-color: #f9f8f8;}
+        .more-pay-span {overflow: hidden;float:left;margin:10px 40px 10px 0;}
+        .more-pay-span .input-money {height:25px;line-height: 25px;width:80px;}
+    </style>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div id="header">
+    <div id="logo">
+        <img src="../img/common_logo.jpg" alt="" />
+    </div>
+    <div class="block-right fright">
+        <div id="user-center">
+            <ul>
+                <li>
+                    admin 欢迎您！
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fleft message-icon"><img src="../img/message_icon.jpg" alt="" /></span>
+                        <span class="fleft">消息提醒</span>
+                        <span class="fleft message-point"><img src="../img/message_point.jpg" alt="" /></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="user-logout">注销</span>
+                </li>
+                <li style="border-right:none;padding-right:0;">
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user-search">
+            <span class="search-by fleft">商 品</span>
+            <img class="input-search-icon fleft" src="../img/input_search_icon.jpg" alt="" />
+            <span class="fleft"><input class="input-search-box" type="text" placeholder="名称/代码"/></span>
+            <span class="search-action fright">搜 索</span>
+        </div>
+    </div>
+</div>
+
+<div id="header-menu" class="mt20">
+    <ul>
+        <li>
+            <a href="javascript:;" class="current-menu">前台收银</a>
+        </li>
+        <li>
+            <a href="javascript:;">预约管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">营运统计</a>
+        </li>
+        <li>
+            <a href="javascript:;">库存管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">权限管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统管理</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <div class="mt20">
+        <div class="div-table">
+            <div class="table-title-bar">
+                <span class="table-title">商品</span>
+                <span class="table-title">价格（元）</span>
+                <span class="table-title">数量</span>
+            </div>
+            <div class="table-body-item">
+                <div class="table-body">
+                    <div class="goods-item">
+                        <div class="goods-body">
+                            <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                            <div class="goods-name">
+                                <p>商品名称：护发素</p>
+                                <p>商品编号：6454521</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="goods-item">1200 / 升</span>
+                    <span class="goods-item">1200</span>
+                </div>
+                <div class="pay-way">
+                    <div class="pay-way-left">
+                        <span class="pay-way-span">支付方式</span>
+                        <span class="pay-way-span"><input name="payway" type="radio"/> 疗程卡支付</span>
+                        <span class="pay-way-span"><input name="payway" type="radio" checked="checked"/> 面额卡支付</span>
+                        <span class="pay-way-span"><input name="payway" type="radio"/> 会员卡支付</span>
+                    </div>
+                    <div class="pay-way-right">
+                        还需结账金额：<span style="color:#ff5a3a;">600</span>
+                    </div>
+                </div>
+                <div class="more-pay">
+                    <div class="pay-way-title">
+                        <span class="pay-way-title-span">更多支付方式</span>
+                        <span class="pay-way-title-close">收起 -</span>
+                    </div>
+                    <div class="more-pay-way-body">
+                        <span class="more-pay-span">
+                            <input type="checkbox" /> 使用优惠券 <input type="text" class="input-money" value="1200"/> 元
+                        </span>
+                        <span class="more-pay-span">
+                            <input type="checkbox" /> 使用红包抵扣 <input type="text" class="input-money" value="1200"/> 元
+                        </span>
+                        <span class="more-pay-span">
+                            <input type="checkbox" /> 使用积分 <input type="text" class="input-money" value="1200"/> 元
+                        </span>
+                        <span class="more-pay-span">
+                            <input type="checkbox" /> 免单 <input type="text" class="input-money" value="1200"/> 元
+                        </span>
+                        <span class="more-pay-span">
+                            <input type="checkbox" /> 欠款 <input type="text" class="input-money" value="1200"/> 元
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-body-item">
+                <div class="table-body">
+                    <div class="goods-item">
+                        <div class="goods-body">
+                            <span class="table-img"><img src="http://img10.360buyimg.com/N5/jfs/t502/155/1056124242/205940/8305e8e6/54a910e4Nc08609af.jpg" /></span>
+                            <div class="goods-name">
+                                <p>商品名称：护发素</p>
+                                <p>商品编号：6454521</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="goods-item">1200 / 升</span>
+                    <span class="goods-item">1200</span>
+                </div>
+                <div class="pay-way">
+                    <div class="pay-way-left">
+                        <span class="pay-way-span">支付方式</span>
+                        <span class="pay-way-span"><input name="payway" type="radio"/> 疗程卡支付</span>
+                        <span class="pay-way-span"><input name="payway" type="radio" checked="checked"/> 面额卡支付</span>
+                        <span class="pay-way-span"><input name="payway" type="radio"/> 会员卡支付</span>
+                    </div>
+                    <div class="pay-way-right">
+                        还需结账金额：<span style="color:#ff5a3a;">600</span>
+                    </div>
+                </div>
+                <div class="more-pay">
+                    <div class="pay-way-title">
+                        <span class="pay-way-title-span">更多支付方式</span>
+                        <span class="pay-way-title-close">收起 -</span>
+                    </div>
+                    <div class="more-pay-way-body">
+                    <span class="more-pay-span">
+                        <input type="checkbox" /> 使用优惠券 <input type="text" class="input-money" value="1200"/> 元
+                    </span>
+                    <span class="more-pay-span">
+                        <input type="checkbox" /> 使用红包抵扣 <input type="text" class="input-money" value="1200"/> 元
+                    </span>
+                    <span class="more-pay-span">
+                        <input type="checkbox" /> 使用积分 <input type="text" class="input-money" value="1200"/> 元
+                    </span>
+                    <span class="more-pay-span">
+                        <input type="checkbox" /> 免单 <input type="text" class="input-money" value="1200"/> 元
+                    </span>
+                    <span class="more-pay-span">
+                        <input type="checkbox" /> 欠款 <input type="text" class="input-money" value="1200"/> 元
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit-buy mt20">
+            <p style="float:left;margin:10px 20px;">
+                <span>商品总金额：</span>
+                4800元已支付金额：<span style="color:#ff5a3a;margin-right: 30px;">2900元</span>
+                还需结账金额：<span style="color:#ff5a3a;">1900元</span>
+            </p>
+
+            <a href="javascript:;" class="am-btn am-btn-block am-btn-danger">去结算</a>
+        </div>
+    </div>
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="../js/amazeui.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $(function(){
+       $('.pay-way-title-close').on('click', function(){
+           var closetext = $(this).text();
+           if(closetext == '收起 -') {
+               $(this).parents('.more-pay').find('.more-pay-way-body').slideUp();
+               $(this).text('展开 +');
+           } else {
+               $(this).parents('.more-pay').find('.more-pay-way-body').slideDown();
+               $(this).text('收起 -');
+           }
+       });
+    });
+</script>
+</body>
+</html>

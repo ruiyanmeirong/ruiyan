@@ -1,0 +1,308 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .product-list {overflow: hidden;margin-top: 20px;}
+        .product-list ul {padding:0;}
+        .product-list li {width:236px;float:left; border: 1px solid #e6e6e6;overflow: hidden;margin:0 10px 30px 10px; }
+        .product-list li span {display: block;}
+        .product-group {margin:20px;}
+        .product-pic img {width:411px;height:351px;}
+        .product-price {color:#ff4401;font-size:20px;}
+        .product-price i {font-style: normal;font-size: 16px;margin-bottom: 5px;}
+        .product-name {color:#727272;margin-bottom: 5px;}
+        .product-sales {color:#999999;}
+        #search-box {margin-bottom: 30px;}
+        #search-box h2 {font-size: 14px;}
+        .search-body {border:1px solid #e6e6e6;padding:0 20px;margin-top: 10px;overflow: hidden;}
+        .search-block-left {width:80%;}
+        .search-type {color:#999999;width:8%;display:block;float:left;margin-right: 50px;}
+        .search-body-inner {border-bottom: 1px dashed #e6e6e6;overflow: hidden;padding:10px 0;position:relative;}
+        .search-body-inner ul {width:85%;float:right;padding: 0;margin:0;}
+        .search-body-inner li {display: inline-block;margin-right: 20px;}
+        .search-block-right {position:absolute;right:10px;top:10px;}
+        .check-more {margin-right: 10px;border:1px solid #e4e4e4;padding:2px;cursor: pointer;}
+        .see-more {padding:2px;cursor: pointer;}
+        .home-type {position: relative;}
+        .shopping-cart {position:absolute;right:0;top:0;}
+        .shopping-cart .shopping-do {width:150px;position:relative;top:8px;cursor: pointer;}
+        .shopping-cart .shopping-do img {width:150px;}
+        .shopping-count {position: absolute;left:25px;top:0;width:20px;height:20px;border-radius:10px;text-align:center;background-color: #ff5a3a;color:#ffffff;display: block;}
+    </style>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div id="header">
+    <div id="logo">
+        <img src="../img/common_logo.jpg" alt="" />
+    </div>
+    <div class="block-right fright">
+        <div id="user-center">
+            <ul>
+                <li>
+                    admin 欢迎您！
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fleft message-icon"><img src="../img/message_icon.jpg" alt="" /></span>
+                        <span class="fleft">消息提醒</span>
+                        <span class="fleft message-point"><img src="../img/message_point.jpg" alt="" /></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="user-logout">注销</span>
+                </li>
+                <li style="border-right:none;padding-right:0;">
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user-search">
+            <span class="search-by fleft">商 品</span>
+            <img class="input-search-icon fleft" src="../img/input_search_icon.jpg" alt="" />
+            <span class="fleft"><input class="input-search-box" type="text" placeholder="名称/代码"/></span>
+            <span class="search-action fright">搜 索</span>
+        </div>
+    </div>
+</div>
+
+<div id="header-menu" class="mt20">
+    <ul>
+        <li>
+            <a href="javascript:;">前台收银</a>
+        </li>
+        <li>
+            <a href="javascript:;">预约管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;" class="current-menu">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">营运统计</a>
+        </li>
+        <li>
+            <a href="javascript:;">库存管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">权限管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统管理</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <div id="home-type">
+        <ul>
+            <li>精品热卖</li>
+            <li>单次服务</li>
+            <li>产品</li>
+            <li>疗程卡</li>
+            <li class="current-type">充值卡</li>
+            <li>套餐</li>
+        </ul>
+        <div class="shopping-cart">
+            <span class="shopping-do"><img src="../img/shopping.jpg" /></span>
+            <span class="shopping-count">2</span>
+        </div>
+    </div>
+
+    <div id="search-box">
+        <h2>搜索条件 &gt;</h2>
+        <div class="search-body">
+            <div class="search-body-inner">
+                <div class="search-block-left">
+                    <span class="search-type">品牌：</span>
+                    <ul>
+                        <li>自然堂</li>
+                        <li>自然堂</li>
+                        <li>自然堂</li>
+                        <li>自然堂</li>
+                    </ul>
+                </div>
+                <div class="search-block-right">
+                    <span class="check-more">多选</span>
+                    <span class="see-more">更多</span>
+                </div>
+            </div>
+            <div class="search-body-inner">
+                <div class="search-block-left">
+                    <span class="search-type">系列：</span>
+                    <ul>
+                        <li>香薰按摩</li>
+                        <li>香薰按摩</li>
+                        <li>香薰按摩</li>
+                        <li>香薰按摩</li>
+                        <li>香薰按摩</li>
+                        <li>香薰按摩</li>
+                        <li>香薰按摩</li>
+                        <li>香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                        <li class="auto-hide">香薰按摩</li>
+                    </ul>
+                </div>
+                <div class="search-block-right">
+                    <span class="check-more">多选</span>
+                    <span class="see-more">收起</span>
+                </div>
+            </div>
+            <div class="search-body-inner">
+                <div class="search-block-left">
+                    <span class="search-type">价格：</span>
+                    <ul>
+                        <li>自然堂</li>
+                        <li>自然堂</li>
+                        <li>自然堂</li>
+                        <li>自然堂</li>
+                    </ul>
+                </div>
+                <div class="search-block-right">
+                    <span class="check-more">多选</span>
+                    <span class="see-more">更多</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="home-tab">
+        <ul>
+            <li class="current-tab"><span><img class="tab-img" src="../img/home_tab_icon1.jpg" alt="" /></span><span>新品</span></li>
+            <li><span><img class="tab-img" src="../img/home_tab_icon2.jpg" alt="" /></span><span>人气</span></li>
+            <li><span><img class="tab-img" src="../img/home_tab_icon3.jpg" alt="" /></span><span>销量</span></li>
+        </ul>
+    </div>
+    <div class="product-list">
+        <ul>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+            <li>
+                <span class="product-pic"><img src="../img/example1.jpg" alt="" /></span>
+                <div class="product-group">
+                    <span class="product-price"><i>￥</i>180</span>
+                    <span class="product-name">千项硬画，装饰画</span>
+                    <span class="product-sales">销量：12</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="paging fright">
+        <ul class="am-pagination fleft" style="text-align: center;">
+            <li class="paging-nav"><a href="#">&lt; 上一页</a></li>
+            <li class="am-active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="paging-nav"><a href="#">下一页 &gt;</a></li>
+        </ul>
+        <span style="margin-top: 2px;">共 100 页. 到第 <input type="text" value="2" /> 页 </span>
+        <span class="paging-sure">确定</span>
+    </div>
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="../js/amazeui.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $(function(){
+        $('.see-more').on('click', function(){
+            var text = $(this).text();
+            if(text == '收起') {
+                $(this).text('更多');
+                $(this).parents('.search-body-inner').find('.auto-hide').fadeOut('500');
+            } else {
+                $(this).text('收起');
+                $(this).parents('.search-body-inner').find('.auto-hide').fadeIn('500');
+            }
+        })
+    });
+</script>
+</body>
+</html>
