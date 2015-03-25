@@ -1,0 +1,433 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/xtree.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/xtree.js"></script>
+    <script src="../js/xmlextras.js"></script>
+    <script src="../js/xloadtree.js"></script>
+    <style>
+        .search-body select {z-index: 100;}
+        .inner-search-action img {width:22px;margin-top:6px;}
+        .side-nav {width:240px;float:left;}
+        .main-right-block {float:right;width:750px;height:100%;overflow:hidden;}
+        .body-title {font-size:14px;overflow: hidden;}
+        .add-new {cursor: pointer;margin: 20px 0;background-color: #ff5a3a;color:#ffffff;padding:5px 10px;display: inline-block;}
+    </style>
+</head>
+<body>
+<!-- Add your site or application content here -->
+<div id="header">
+    <div id="logo">
+        <img src="../img/common_logo.jpg" alt="" />
+    </div>
+    <div class="block-right fright">
+        <div id="user-center">
+            <ul>
+                <li>
+                    admin 欢迎您！
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fleft message-icon"><img src="../img/message_icon.jpg" alt="" /></span>
+                        <span class="fleft">消息提醒</span>
+                        <span class="fleft message-point"><img src="../img/message_point.jpg" alt="" /></span>
+                    </a>
+                </li>
+                <li>
+                    <span class="user-logout">注销</span>
+                </li>
+                <li style="border-right:none;padding-right:0;">
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user-search">
+            <span class="search-by fleft">商 品</span>
+            <img class="input-search-icon fleft" src="../img/input_search_icon.jpg" alt="" />
+            <span class="fleft"><input class="input-search-box" type="text" placeholder="名称/代码"/></span>
+            <span class="search-action fright">搜 索</span>
+        </div>
+    </div>
+</div>
+
+<div id="header-menu" class="mt20">
+    <ul>
+        <li>
+            <a href="javascript:;" class="current-menu">前台收银</a>
+        </li>
+        <li>
+            <a href="javascript:;">预约管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        </li>
+        <li>
+            <a href="javascript:;">营运统计</a>
+        </li>
+        <li>
+            <a href="javascript:;">库存管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">权限管理</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统管理</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <div class="side-nav">
+        <div class="am-panel-group" id="accordion">
+            <div class="am-panel am-panel-default">
+                <div class="am-panel-hd">
+                    <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">
+                        产品管理
+                    </h4>
+                </div>
+                <div id="do-not-say-1" class="am-panel-collapse am-collapse">
+                    <div class="am-panel-bd">
+                        <ul class="am-nav">
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="am-panel am-panel-default">
+                <div class="am-panel-hd">
+                    <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}">
+                        人员管理
+                    </h4>
+                </div>
+                <div id="do-not-say-2" class="am-panel-collapse am-collapse am-in">
+                    <div class="am-panel-bd">
+                        <ul class="am-nav">
+                            <li><a href="javascript:;">人员管理</a></li>
+                            <li><a href="javascript:;">人员审核</a></li>
+                            <li class="am-active"><a href="javascript:;">角色管理</a></li>
+                            <li><a href="javascript:;">角色审核</a></li>
+                            <li><a href="javascript:;">业务字典</a></li>
+                            <li><a href="javascript:;">字典审核</a></li>
+                            <li><a href="javascript:;">系统日志</a></li>
+                            <li><a href="javascript:;">字段配置</a></li>
+                            <li><a href="javascript:;">字段审核</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="am-panel am-panel-default">
+                <div class="am-panel-hd">
+                    <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">
+                        Pad用户登陆跟踪
+                    </h4>
+                </div>
+                <div id="do-not-say-3" class="am-panel-collapse am-collapse">
+                    <div class="am-panel-bd">
+                        <ul class="am-nav">
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                            <li><a href="javascript:;">等待添加</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-right-block">
+        <h2 class="body-title">首页 &gt; 人员管理 &gt; 角色管理</h2>
+        <span class="add-new" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 600, height: 400}">新增角色</span>
+        <div class="main-table">
+            <table class="am-table am-table-striped am-table-hover table-main">
+                <thead>
+                <tr>
+                    <th>角色名称</th><th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>测试名称</td>
+                    <td>
+                        <div class="am-btn-group am-btn-group-xs">
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 600, height: 400}">修改</a>
+                            <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 500}">权限</a>
+                            <a href="javacript:;" class="table-option2">删除</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="paging fright">
+                <ul class="am-pagination fleft" style="text-align: center;">
+                    <li class="paging-nav"><a href="#">&lt; 上一页</a></li>
+                    <li class="am-active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="paging-nav"><a href="#">下一页 &gt;</a></li>
+                </ul>
+                <span style="margin-top: 2px;">共 100 页. 到第 <input type="text" value="2" /> 页 </span>
+                <span class="paging-sure">确定</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">新增角色
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner">
+                <div class="form-body am-form">
+                    <div class="form-group">
+                        <div class="search-option fleft">
+                            <span class="base-option-title fleft">角色名称：</span>
+                            <span class="form-field-inline"><input class="base-input" type="text"/></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="search-option fleft">
+                            <span class="base-option-title fleft">角色描述：</span>
+                            <span class="form-field-inline"><input class="base-input" type="text"/></span>
+                        </div>
+                    </div>
+                    <div class="form-group2">
+                        <div class="search-option fleft">
+                            <span class="base-option-title fleft">申请原因：</span>
+                            <textarea class="form-field-inline" rows="5" cols="35"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="margin:0 auto;width:280px;">确认提交</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-2">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">修改角色
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner">
+                <div class="form-body am-form">
+                    <div class="form-group">
+                        <div class="search-option fleft">
+                            <span class="base-option-title fleft">角色名称：</span>
+                            <span class="form-field-inline"><input class="base-input" type="text" value="测试角色"/></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="search-option fleft">
+                            <span class="base-option-title fleft">角色描述：</span>
+                            <span class="form-field-inline"><input class="base-input" type="text"/></span>
+                        </div>
+                    </div>
+                    <div class="form-group2">
+                        <div class="search-option fleft">
+                            <span class="base-option-title fleft">申请原因：</span>
+                            <textarea class="form-field-inline" rows="5" cols="35"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="margin:0 auto;width:280px;">确认提交</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-3">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">权限分配
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner" style="text-align: left;height:300px;">
+                <script type="text/javascript">
+                    /// XP Look
+                    webFXTreeConfig.rootIcon		= "../images/xp/folder.png";
+                    webFXTreeConfig.openRootIcon	= "../images/xp/openfolder.png";
+                    webFXTreeConfig.folderIcon		= "../images/xp/folder.png";
+                    webFXTreeConfig.openFolderIcon	= "../images/xp/openfolder.png";
+                    webFXTreeConfig.fileIcon		= "../images/xp/file.png";
+                    webFXTreeConfig.lMinusIcon		= "../images/xp/Lminus.png";
+                    webFXTreeConfig.lPlusIcon		= "../images/xp/Lplus.png";
+                    webFXTreeConfig.tMinusIcon		= "../images/xp/Tminus.png";
+                    webFXTreeConfig.tPlusIcon		= "../images/xp/Tplus.png";
+                    webFXTreeConfig.iIcon			= "../images/xp/I.png";
+                    webFXTreeConfig.lIcon			= "../images/xp/L.png";
+                    webFXTreeConfig.tIcon			= "../images/xp/T.png";
+
+                    //var tree = new WebFXLoadTree("WebFXLoadTree", "tree1.xml");
+                    //tree.setBehavior("classic");
+
+                    var rti;
+                    var tree = new WebFXTree("Root");
+                    tree.add(new WebFXTreeItem("Tree Item 1"));
+                    tree.add(new WebFXLoadTreeItem("Tree Item 2", "tree.xml"));
+                    tree.add(rti = new WebFXLoadTreeItem("Tree Item 3 (Reload)", "date.xml.pl"));
+                    tree.add(new WebFXTreeItem("Tree Item 4"));
+
+                    document.write(tree);
+                </script>
+            </div>
+            <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="margin:0 auto;width:280px;">确认提交</a>
+        </div>
+    </div>
+</div>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="../js/amazeui.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

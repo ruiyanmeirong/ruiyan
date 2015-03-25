@@ -13,3 +13,5 @@
     page4.html      购买商品
     page5.html      详情
     
+##module4 (权限管理)
+    page1.html      角色管理    xloadtree参考：http://abstractforever.iteye.com/blog/768627
