@@ -15,3 +15,8 @@
     
 ##module4 (权限管理)
     page1.html      角色管理    xloadtree参考：http://abstractforever.iteye.com/blog/768627
+    
+##module5 (预约管理)
+    page1.html      预约管理_新增顾客
+    page2.html      预约管理
+    
