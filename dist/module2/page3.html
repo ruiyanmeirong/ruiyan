@@ -140,7 +140,8 @@
                 <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 600, height: 380}">单工种分配</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 600, height: 380}">单工种分配（联动）</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-999', closeViaDimmer: 0, width: 400, height: 200}">全局弹出</a>
                     </div>
                 </td>
             </tr>
@@ -166,7 +167,7 @@
                     <div class="am-btn-group am-btn-group-xs">
                         <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-3', closeViaDimmer: 0, width: 600, height: 320}">单工种提成设置</a>
                         <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-4', closeViaDimmer: 0, width: 800, height: 300}">单工种分配2</a>
-                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-5', closeViaDimmer: 0, width: 600, height: 400}">自定义业绩</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-5', closeViaDimmer: 0, width: 600, height: 450}">自定义业绩</a>
                     </div>
                 </td>
             </tr>
@@ -178,8 +179,9 @@
                 <td>单人完成</td>
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
-                        <a href="javacript:;" class="table-option2">设置提成</a>
-                        <a href="javacript:;" class="table-option2">修改工种</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-6', closeViaDimmer: 0, width: 600, height: 500}">3月28日新加1</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-7', closeViaDimmer: 0, width: 800, height: 600}">3月28日新加2</a>
+                        <a href="javacript:;" class="table-option2" data-am-modal="{target: '#doc-modal-8', closeViaDimmer: 0, width: 800, height: 650}">3月28日新加3（滚动）</a>
                     </div>
                 </td>
             </tr>
@@ -233,13 +235,13 @@
         </div>
         <div class="am-modal-b am-form">
             <div class="modal-inner">
-                <div class="form-group" style="width:400px;margin:0 auto 20px; auto;">
+                <div class="form-group" style="width:500px;margin:0 auto 20px auto;">
                     <div class="search-option fleft">
                         <span class="option-title fleft">组合方式：</span>
-                        <select class="form-field-inline-select">
-                            <option value="option1">选项一</option>
-                            <option value="option2">选项二</option>
-                            <option value="option3">选项三</option>
+                        <select class="form-field-inline-select change-trigger">
+                            <option value="option1">高级美发师</option>
+                            <option value="option2">洗头工</option>
+                            <option value="option3">按摩师</option>
                         </select>
                     </div>
                     <div class="search-option fleft">
@@ -252,7 +254,7 @@
                     </div>
                 </div>
                 <div class="modal-inner-center">
-                    <div class="home-type modal-tab1">
+                    <div class="home-type modal-tab1 change-trigger-target">
                         <ul>
                             <li class="current-type">高级美发师</li>
                             <li>洗头工</li>
@@ -412,8 +414,8 @@
                     </div>
                     <div class="modal-group">
                         <span>指定提成：</span>
-                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
-                        <span><input name="group1" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                        <span><input name="group2" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group2" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
                     </div>
                     <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:50px auto 20px auto;">确定</a>
                 </div>
@@ -470,6 +472,7 @@
                         <li><input type="checkbox"/>高级美容师</li>
                         <li><input type="checkbox"/>高级美容师</li>
                     </ul>
+                    <span>自定义名称<input type="text" class="form-field-inline single-line-input"/></span>
                 </div>
                 <div class="modal-inner-center">
                     <div class="home-type2 modal-tab1">
@@ -496,10 +499,304 @@
     </div>
 </div>
 
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-6">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">单工种提成设置
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner">
+                <div class="form-group" style="width:400px;margin:0 auto 20px auto;">
+                    <div class="search-option fleft">
+                        <span class="option-title fleft">选择工种：</span>
+                        <select class="form-field-inline-select">
+                            <option value="option1">选项一</option>
+                            <option value="option2">选项二</option>
+                            <option value="option3">选项三</option>
+                        </select>
+                    </div>
+                    <div class="search-option fleft">
+                        <span class="option-title fleft">提成方案：</span>
+                        <select class="form-field-inline-select">
+                            <option value="option1">选项一</option>
+                            <option value="option2">选项二</option>
+                            <option value="option3">选项三</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-inner-center">
+                    <h2 style="text-align: left;margin:0 0 10px 50px;font-size:14px;">默认提成</h2>
+                    <div class="modal-group">
+                        <span>现金：</span>
+                        <span><input name="group1" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group1" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <div class="modal-group">
+                        <span>卡扣：</span>
+                        <span><input name="group2" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group2" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <div class="modal-group">
+                        <span>卡耗：</span>
+                        <span><input name="group3" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group3" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+
+                    <h2 style="text-align: left;margin:10px 0 10px 50px;font-size:14px;">指定提成</h2>
+                    <div class="modal-group">
+                        <span>现金：</span>
+                        <span><input name="group4" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group4" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <div class="modal-group">
+                        <span>卡扣：</span>
+                        <span><input name="group5" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group5" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+                    <div class="modal-group">
+                        <span>卡耗：</span>
+                        <span><input name="group6" type="radio" style="margin-right: 5px;"/>提成金额<input type="text" class="form-field-inline single-line-input" style="margin-right:30px;"/></span>
+                        <span><input name="group6" type="radio" checked="checked" style="margin-right: 5px;"/>提成比例<input type="text" class="form-field-inline single-line-input"/></span>
+                    </div>
+
+                    <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:50px auto 20px auto;">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-7">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">设置提成
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner" style="height:450px;overflow:auto;">   <!-- 因为高度不够，所以加入滚动 -->
+                <div class="form-group">
+                    <h2 style="text-align: left;font-size: 14px;margin-left: 30px;">选择组合服务</h2>
+                    <ul class="medal-checkbox" style="margin-bottom: 0px;">
+                        <li><input type="checkbox">精油按摩1</li>
+                        <li><input type="checkbox">针灸推拿1</li>
+                        <li><input type="checkbox">精油按摩2</li>
+                        <li><input type="checkbox">针灸推拿2</li>
+                    </ul>
+                    <span>自定义名称：</span>
+                    <span class="form-field-inline" style="margin:0 5px;"><input class="base-input" type="text"></span>
+                    <span style="margin-left:20px;cursor:pointer; background-color: #ff9f41;color:#fff;padding:5px 10px;">添加</span>
+                </div>
+                <div class="modal-inner-center">
+                    <div class="home-type3 modal-tab1">
+                        <ul>
+                            <li class="current-type3">组合一</li>
+                            <li class="">组合二</li>
+                            <li>组合三</li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <div class="search-option fleft" style="margin-bottom: 10px;">
+                            <span class="option-title fleft">提成方式：</span>
+                            <select class="form-field-inline-select">
+                                <option value="option1">选项一</option>
+                                <option value="option2">选项二</option>
+                                <option value="option3">选项三</option>
+                            </select>
+                        </div>
+                        <span style="float:left;line-height:2.5em;display:block;">精油按摩1+精油按摩1+精油按摩1+精油按摩1+精油按摩1+精油按摩1+精油按摩1</span>
+                    </div>
+                    <div class="modal-group">
+                        <span><input type="text" class="form-field-inline single-line-input">元 - </span>
+                        <span><input type="text" class="form-field-inline single-line-input">元，提成比例（％）</span>
+                        <span><input type="text" class="form-field-inline single-line-input"></span>
+                        <span style="margin-left:20px;cursor:pointer; background-color: #ff9f41;color:#fff;padding:5px 10px;">添加</span>
+                    </div>
+                    <div class="main-table mt20" style="overflow: hidden;clear:both;">
+                        <table class="am-table am-table-striped am-table-hover table-main">
+                            <thead>
+                            <tr>
+                                <th>业绩范围 (从)</th><th>业绩范围 (到)</th><th>提成比例 (%)</th><th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1000</td>
+                                <td>1500</td>
+                                <td>3</td>
+                                <td>
+                                    <div class="am-btn-group am-btn-group-xs">
+                                        <a href="javacript:;" class="table-option2">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td>1500</td>
+                                <td>3</td>
+                                <td>
+                                    <div class="am-btn-group am-btn-group-xs">
+                                        <a href="javacript:;" class="table-option2">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td>1500</td>
+                                <td>3</td>
+                                <td>
+                                    <div class="am-btn-group am-btn-group-xs">
+                                        <a href="javacript:;" class="table-option2">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:20px auto;">确定</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-8">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">设置提成
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner" style="height:500px;overflow:auto;">   <!-- 因为高度不够，所以加入滚动 -->
+                <div class="form-group">
+                    <h2 style="text-align: left;font-size: 14px;margin-left: 30px;">选择组合服务</h2>
+                    <ul class="medal-checkbox" style="margin-bottom: 0px;">
+                        <li><input type="checkbox">精油按摩1</li>
+                        <li><input type="checkbox">针灸推拿1</li>
+                        <li><input type="checkbox">精油按摩2</li>
+                        <li><input type="checkbox">针灸推拿2</li>
+                    </ul>
+                    <span>自定义名称：</span>
+                    <span class="form-field-inline" style="margin:0 5px;"><input class="base-input" type="text"></span>
+                    <span style="margin-left:20px;cursor:pointer; background-color: #ff9f41;color:#fff;padding:5px 10px;">添加</span>
+                </div>
+                <div class="modal-inner-center">
+                    <div class="home-type4 modal-tab1">
+                        <ul>
+                            <li class="current-type4">组合一</li>
+                            <li class="">组合二</li>
+                            <li>组合三</li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <div class="search-option fleft" style="margin-bottom: 10px;">
+                            <span class="option-title fleft">提成方式：</span>
+                            <select class="form-field-inline-select">
+                                <option value="option1">选项一</option>
+                                <option value="option2">选项二</option>
+                                <option value="option3">选项三</option>
+                            </select>
+                        </div>
+                        <span style="float:left;line-height:2.5em;display:block;">精油按摩1+精油按摩1+精油按摩1+精油按摩1+精油按摩1+精油按摩1+精油按摩1</span>
+                    </div>
+                    <div class="home-type5 modal-tab1">
+                        <ul>
+                            <li class="current-type5">现金支付</li>
+                            <li class="">卡扣支付</li>
+                            <li>卡耗支付</li>
+                        </ul>
+                    </div>
+                    <div class="modal-group">
+                        <span><input type="text" class="form-field-inline single-line-input">元 - </span>
+                        <span><input type="text" class="form-field-inline single-line-input">元，提成比例（％）</span>
+                        <span><input type="text" class="form-field-inline single-line-input"></span>
+                        <span style="margin-left:20px;cursor:pointer; background-color: #ff9f41;color:#fff;padding:5px 10px;">添加</span>
+                    </div>
+                    <div class="main-table mt20" style="overflow: hidden;clear:both;">
+                        <table class="am-table am-table-striped am-table-hover table-main">
+                            <thead>
+                            <tr>
+                                <th>业绩范围 (从)</th><th>业绩范围 (到)</th><th>提成比例 (%)</th><th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1000</td>
+                                <td>1500</td>
+                                <td>3</td>
+                                <td>
+                                    <div class="am-btn-group am-btn-group-xs">
+                                        <a href="javacript:;" class="table-option2">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td>1500</td>
+                                <td>3</td>
+                                <td>
+                                    <div class="am-btn-group am-btn-group-xs">
+                                        <a href="javacript:;" class="table-option2">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td>1500</td>
+                                <td>3</td>
+                                <td>
+                                    <div class="am-btn-group am-btn-group-xs">
+                                        <a href="javacript:;" class="table-option2">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:20px auto;">确定</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-999">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd modal-title">提示
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-b am-form">
+            <div class="modal-inner">
+                <p style="text-align: left;">全局提示信息</p>
+            </div>
+            <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="width:300px;margin:20px auto;">确定</a>
+        </div>
+    </div>
+</div>
+
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="../js/amazeui.min.js"></script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
+<script>
+    $(function(){
+        // 抛砖引玉，联动简单实现
+        $('.change-trigger').on('change', function(){
+            var option = $(this).val();
+            var index = option.substring(6, 7);
+
+            if(index <= 3) {
+                $('.home-type li').removeClass('current-type');
+                $('.home-type li').eq(index - 1).addClass('current-type');
+            }
+        });
+    });
+</script>
 </body>
 </html>

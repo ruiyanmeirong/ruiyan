@@ -36,6 +36,7 @@
         .search-block-right {position:absolute;right:10px;top:10px;}
         .check-more {margin-right: 10px;border:1px solid #e4e4e4;padding:2px;cursor: pointer;}
         .see-more {padding:2px;cursor: pointer;}
+        .table-set {float:right;background-color: #ff9f41;color:#ffffff;cursor: pointer;padding:5px 10px;}
     </style>
 </head>
 <body>
@@ -76,35 +77,40 @@
 
 <div id="header-menu" class="mt20">
     <ul>
-        <li>
-            <a href="javascript:;">前台收银</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="current-menu main-menu-item">前台收银</a>
         </li>
-        <li>
-            <a href="javascript:;">预约管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">预约管理</a>
         </li>
-        <li>
-            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
-        <li>
-            <a href="javascript:;" class="current-menu">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+            <ul class="submenu-list">
+                <li><a href="javascript:;">商品信息</a></li>
+                <li><a href="javascript:;">提成设置</a></li>
+                <li><a href="javascript:;">参数设置</a></li>
+            </ul>
         </li>
-        <li>
-            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
-        <li>
-            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
-        <li>
-            <a href="javascript:;">营运统计</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">营运统计</a>
         </li>
-        <li>
-            <a href="javascript:;">库存管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">库存管理</a>
         </li>
-        <li>
-            <a href="javascript:;">权限管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">权限管理</a>
         </li>
-        <li>
-            <a href="javascript:;">系统管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">系统管理</a>
         </li>
     </ul>
 </div>
@@ -112,14 +118,14 @@
 <div id="content">
     <div id="home-type">
         <ul>
-            <li class="current-type">精品热卖</li>
-            <li>单次服务</li>
-            <li>产品</li>
-            <li>疗程卡</li>
-            <li>面额卡</li>
-            <li>套餐</li>
+            <li class="current-type"><a href="javascript:;" style="color:#666666;">精品热卖</a></li>
+            <li><a href="javascript:;" style="color:#666666;">单次服务</a></li>
+            <li><a href="javascript:;" style="color:#666666;">产品</a></li>
+            <li><a href="javascript:;" style="color:#666666;">疗程卡</a></li>
+            <li><a href="javascript:;" style="color:#666666;">面额卡</a></li>
+            <li><a href="javascript:;" style="color:#666666;">套餐</a></li>
         </ul>
-        <!--<span class="line" />-->
+        <div class="table-set"> + 新增预约客户</div>
     </div>
 
     <div id="search-box">

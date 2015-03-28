@@ -2,9 +2,10 @@
     login.html      登录
     
 ##module2（商品管理）
-    page1.html      商品信息
+    page1.html      商品信息    (与单次服务，产品，疗程卡，套餐为同一页面，jsp动态化即可)
     page2.html      面额卡_新增面额卡
-    page3.html      提成设置
+    page3.html      提成设置    (新加弹出层修改，注意弹出层尺寸有变更)
+    page5.html      全局导航菜单      (加入二级菜单下拉，需重新集成)
     
 ##module3（前台收银）
     page1.html      前台收银
