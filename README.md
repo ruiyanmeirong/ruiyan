@@ -24,3 +24,8 @@
 ##module6 (库存管理)
     page1.html      库存管理_正品出库
     page2.html      库存盘点_产品出库
+    page3.html      库存盘点_开始盘点
+    page4.html      库存盘点_盘点明细
+    page5.html      库存盘点
+    page6.html      库存管理_正品入库(含弹出)
+    page7.html      库存盘点_产品入口(可编辑)
