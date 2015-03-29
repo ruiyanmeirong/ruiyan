@@ -15,13 +15,9 @@
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
-        .search-body {border: 1px solid #e6e6e6;height:80px;padding:20px;}
         .search-body select {z-index: 100;}
-        .option-title {line-height: 2.5em;}
-        .search-option {margin-right: 30px;}
-        .inner-search {width: 200px;}
-        .inner-search-action {display: inline-block;border:1px solid #cccccc;height: 37px;padding: 0 10px;border-left: none;}
         .inner-search-action img {width:22px;margin-top:6px;}
+        .table-set {float:right;background-color: #ff9f41;color:#ffffff;cursor: pointer;padding:5px 10px;}
     </style>
 </head>
 <body>
@@ -62,40 +58,155 @@
 
 <div id="header-menu" class="mt20">
     <ul>
-        <li>
-            <a href="javascript:;">前台收银</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">前台收银</a>
         </li>
-        <li>
-            <a href="javascript:;">预约管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">预约管理</a>
         </li>
-        <li>
-            <a href="javascript:;">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">顾客管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
-        <li>
-            <a href="javascript:;">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">商品管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+            <ul class="submenu-list">
+                <li><a href="javascript:;">商品信息</a></li>
+                <li><a href="javascript:;">提成设置</a></li>
+                <li><a href="javascript:;">参数设置</a></li>
+            </ul>
         </li>
-        <li>
-            <a href="javascript:;">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">员工管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
-        <li>
-            <a href="javascript:;">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">店铺管理<span class="has-submenu"><img src="../img/arrow_menu_down.jpg" alt=""/></span></a>
         </li>
-        <li>
-            <a href="javascript:;">营运统计</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">营运统计</a>
         </li>
-        <li>
-            <a href="javascript:;" class="current-menu">库存管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="current-menu main-menu-item">库存管理</a>
         </li>
-        <li>
-            <a href="javascript:;">权限管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">权限管理</a>
         </li>
-        <li>
-            <a href="javascript:;">系统管理</a>
+        <li class="main-menu-li">
+            <a href="javascript:;" class="main-menu-item">系统管理</a>
         </li>
     </ul>
 </div>
 
 <div id="content">
+    <div id="home-type">
+        <ul>
+            <li class="current-type"><a href="javascript:;" style="color:#666666;">正品出库</a></li>
+        </ul>
+    </div>
+    <div class="base-form mt20" style="border-top:1px solid #e6e6e6;">
+        <div class="form-body am-form">
+            <div class="form-group">
+                <div class="search-option fleft">
+                    <span class="option-title fleft">入库日期：</span>
+                    <span class="form-field-inline fleft" style="margin-top:5px;"><input class="base-input" type="text" data-am-datepicker="{theme: 'success'}" readonly/></span>
+                    <span class="option-title fleft" style="margin:0 5px;">至</span>
+                    <span class="form-field-inline fleft" style="margin-top:5px;"><input class="base-input" type="text" data-am-datepicker="{theme: 'success'}" readonly/></span>
+                    <a href="javascript:;" class="am-btn am-btn-block am-btn-danger" style="float:left;width:60px;margin:5px 0 0 10px;height:30px;line-height:30px;padding:0;">搜索</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-set mt20">产品出库</div>
+    <div class="main-table" style="overflow: hidden;clear:both;">
+        <table class="am-table am-table-striped am-table-hover table-main">
+            <thead>
+            <tr>
+                <th>序号</th><th>入库类型</th><th>操作人员</th><th>入库时间</th><th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>采购入库</td>
+                <td>王兰</td>
+                <td>2015-02-01</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option2">入库详情</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>采购入库</td>
+                <td>王兰</td>
+                <td>2015-02-01</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option2">入库详情</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>采购入库</td>
+                <td>王兰</td>
+                <td>2015-02-01</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option2">入库详情</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>采购入库</td>
+                <td>王兰</td>
+                <td>2015-02-01</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option2">入库详情</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>采购入库</td>
+                <td>王兰</td>
+                <td>2015-02-01</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option2">入库详情</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>采购入库</td>
+                <td>王兰</td>
+                <td>2015-02-01</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option2">入库详情</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>采购入库</td>
+                <td>王兰</td>
+                <td>2015-02-01</td>
+                <td>
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="javacript:;" class="table-option2">入库详情</a>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a href="javascript:;" class="am-btn am-btn-block am-btn-danger mt20" style="margin:20px auto;width:280px;">确定</a>
 
 </div>
 

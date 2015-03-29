@@ -21,3 +21,6 @@
     page1.html      预约管理_新增顾客
     page2.html      预约管理
     
+##module6 (库存管理)
+    page1.html      库存管理_正品出库
+    page2.html      库存盘点_产品出库
